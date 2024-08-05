@@ -1,7 +1,7 @@
 
 # Projetos Da Faculdade
 
-Nesse repositório estão armazenados todos os códigos que foram elaborados durante ou após as aulas da graduação de Engenharia De Software na Universidade Cesumar.
+Nesse repositório estão armazenados todos os códigos que foram elaborados durante ou após as disciplinas da graduação de Engenharia De Software na Universidade Cesumar.
 
 ## Autores
 
