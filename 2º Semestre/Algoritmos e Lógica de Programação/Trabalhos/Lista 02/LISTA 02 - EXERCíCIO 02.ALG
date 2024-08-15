@@ -1,7 +1,7 @@
 Algoritmo "Lista 02 - Exercício 02"
 // Disciplina  : [Algoritmos e Lógica de Programação]
 // Professor   : Alexandre Moreno 
-// Descrição   : Solicite um valor e informa se é positivo, negativo ou Zero.
+// Descrição   : Solicita um valor e informa se é positivo, negativo ou Zero.
 // Autor(a)    : Higor Rocha Alves
 // Data atual  : 13/08/2024
 Var

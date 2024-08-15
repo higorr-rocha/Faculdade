@@ -18,7 +18,7 @@ Inicio
    leia(nome_1)
    escreva("Digite a idade da primeira pessoa: ")
    leia(idade_1)
-   escreva("Digite o sexo da primeira pessoa (M/F): ")
+   escreva("Digite o sexo da primeira pessoa (H/M): ")
    leia(sexo_1)
    escreva("Digite o salário da primeira pessoa: ")
    leia(salario_1)
@@ -27,7 +27,7 @@ Inicio
    leia(nome_2)
    escreva("Digite a idade da segunda pessoa: ")
    leia(idade_2)
-   escreva("Digite o sexo da segunda pessoa (M/F): ")
+   escreva("Digite o sexo da segunda pessoa (H/M): ")
    leia(sexo_2)
    escreva("Digite o salário da segunda pessoa: ")
    leia(salario_2)
@@ -36,13 +36,13 @@ Inicio
    leia(nome_3)
    escreva("Digite a idade da terceira pessoa: ")
    leia(idade_3)
-   escreva("Digite o sexo da terceira pessoa (M/F): ")
+   escreva("Digite o sexo da terceira pessoa (H/M): ")
    leia(sexo_3)
    escreva("Digite o salário da terceira pessoa: ")
    leia(salario_3)
 
    // Processamento
-   se sexo_1 = "M" entao
+   se sexo_1 = "H" entao
       total_homens <- total_homens + salario_1
       num_homens <- num_homens + 1
    senao
@@ -50,7 +50,7 @@ Inicio
       num_mulheres <- num_mulheres + 1
    fimse
 
-   se sexo_2 = "M" entao
+   se sexo_2 = "H" entao
       total_homens <- total_homens + salario_2
       num_homens <- num_homens + 1
    senao
@@ -58,7 +58,7 @@ Inicio
       num_mulheres <- num_mulheres + 1
    fimse
 
-   se sexo_3 = "M" entao
+   se sexo_3 = "H" entao
       total_homens <- total_homens + salario_3
       num_homens <- num_homens + 1
    senao
