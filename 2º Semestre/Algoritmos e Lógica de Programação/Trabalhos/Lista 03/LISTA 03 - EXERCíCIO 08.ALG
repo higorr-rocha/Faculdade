@@ -8,8 +8,10 @@ Var
 num: inteiro
 
 Inicio
-// Entrada e Processamento
+// Inicialização
 num <- 5
+
+// Entrada e Processamento
 escreva("Número: ")
 repita
       se num % 2 = 0 entao
