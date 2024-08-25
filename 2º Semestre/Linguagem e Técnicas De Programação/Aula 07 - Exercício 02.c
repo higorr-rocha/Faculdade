@@ -1,7 +1,7 @@
 /*
     Disciplina  : [Linguagem e Técnicas de Programação]
     Nome        : Aula 07 - Exercício 02
-    Descrição   : Colocando função abaixo da Main.
+    Descrição   : Calculadora de Soma, Subtração, Multiplicação, Divisão, Média e Porcentagem.
     Autor       : Higor Rocha
     Data atual  : 23/08/2024
 */

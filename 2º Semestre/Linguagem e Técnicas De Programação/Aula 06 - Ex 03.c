@@ -1,7 +1,7 @@
 /*
     Disciplina  : [Linguagem e Técnicas de Programação]
-    Nome        : Função Divisor
-    Descrição   : Recebe um número e diz o divisor.
+    Nome        : Aula 06 - Exercício 03
+    Descrição   : Exercícios do Slide.
     Autor       : Higor Rocha
     Data atual  : 20/08/2024
 */

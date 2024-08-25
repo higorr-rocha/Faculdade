@@ -1,7 +1,7 @@
 /*
     Disciplina  : [Linguagem e Técnicas de Programação]
     Nome        : Programa em C  
-    Descrição   : Recebe Nome e Idade. Informa quantos anos faltam para os 100 anos.
+    Descrição   : Recebe Nome e Idade. Na saída faz uma saudação e informa a idade.
     Autor       : Higor Rocha
     Data atual  : 06/08/2024
 */

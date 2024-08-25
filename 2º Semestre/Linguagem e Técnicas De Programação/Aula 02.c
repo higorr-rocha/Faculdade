@@ -1,14 +1,14 @@
 /*
-    Disciplina  : [Linguagem e T√©cnicas de Programa√ß√£o]
+    Disciplina  : [Linguagem e TÈcnicas de ProgramaÁ„o]
     Nome        : Primeiro Programa em C  
-    Descri√ß√£o   : Escreve Ol√°, Mundo!
+    DescriÁ„o   : Escreve Ol·, Mundo!
     Autor       : Higor Rocha
     Data atual  : 02/08/2024
 */
 
 #include <stdio.h>
-// Fun√ß√£o principal que devolve um inteiro
-int main(){ // In√≠cio da Fun√ß√£o.
-    printf("Ol√°, Mundo!");   // Escreve o valor definido na tela.
-    return 0;               // Devolve o valor da fun√ß√£o (int).
-}   // Fim da Fun√ß√£o.
+// FunÁ„o principal que devolve um inteiro
+int main(){ // InÌcio da FunÁ„o.
+    printf("Ol·, Mundo!");   // Escreve o valor definido na tela.
+    return 0;               // Devolve o valor da funÁ„o (int).
+}   // Fim da FunÁ„o.

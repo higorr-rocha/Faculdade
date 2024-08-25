@@ -1,7 +1,7 @@
 /*
     Disciplina  : [Linguagem e Técnicas de Programação]
-    Nome        : Função Divisor
-    Descrição   : Recebe um número e diz o divisor.
+    Nome        : Aula 06 - Exercício 05
+    Descrição   : Recebe um número de três dígitos e diz se o dígito da centena é Par ou Ìmpar.
     Autor       : Higor Rocha
     Data atual  : 20/08/2024
 */

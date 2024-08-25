@@ -10,10 +10,7 @@
 #include <locale.h>
 
 int par_impar(int num){
-    if (num % 2 == 0){
-        return 1;
-    }
-    return 0;
+    return !(num % 2);
 }
 
 int main(){

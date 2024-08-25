@@ -1,7 +1,7 @@
 /*
     Disciplina  : [Linguagem e Técnicas de Programação]
-    Nome        : Função Divisor
-    Descrição   : Recebe um número e diz o divisor.
+    Nome        : Aula 06 - Exercício 02
+    Descrição   : Recebe dois números e diz se o 1º é divisível pelo 2º.
     Autor       : Higor Rocha
     Data atual  : 20/08/2024
 */

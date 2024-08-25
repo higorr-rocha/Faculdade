@@ -1,6 +1,6 @@
 /*
     Disciplina  : [Linguagem e Técnicas de Programação]
-    Nome        : Primeiro Programa em C  
+    Nome        : Programa em C  
     Descrição   : Recebe Nome e Idade. Na saída faz uma saudação e informa a idade.
     Autor       : Higor Rocha
     Data atual  : 06/08/2024
