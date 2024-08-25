@@ -1,7 +1,7 @@
 /*
     Disciplina  : [Linguagem e Técnicas de Programação]
     Nome        : Calculadora de Triãngulo Retângulo
-    Descrição   : Recebe três número e informa se eles pertencem a um triângulo retângulo.
+    Descrição   : Calculadora Simples.
     Autor       : Higor Rocha
     Data atual  : 13/08/2024
 */

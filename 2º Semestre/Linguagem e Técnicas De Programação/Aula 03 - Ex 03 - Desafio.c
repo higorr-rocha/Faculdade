@@ -1,5 +1,5 @@
 /*
-    Disciplina  : [Linguagem e T?cnicas de Programação]
+    Disciplina  : [Linguagem e Técnicas de Programação]
     Nome        : Média em C
     Descrição   : Recebe três números e entrega a média deles.
     Autor       : Higor Rocha

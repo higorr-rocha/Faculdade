@@ -1,7 +1,7 @@
 /*
     Disciplina  : [Linguagem e Técnicas de Programação]
     Nome        : Primeira função em C
-    Descrição   : Recebe um número e diz se é Par ou Ímpar.
+    Descrição   : Recebe um número e diz se é Par ou Ímpar. Versão 2.0
     Autor       : Higor Rocha
     Data atual  : 20/08/2024
 */

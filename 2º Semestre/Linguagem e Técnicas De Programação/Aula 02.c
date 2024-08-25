@@ -7,8 +7,11 @@
 */
 
 #include <stdio.h>
+#include <locale.h>
+
 // Função principal que devolve um inteiro
 int main(){ // Início da Função.
+    setlocale(LC_ALL, "Portuguese-Brazilian");
     printf("Olá, Mundo!");   // Escreve o valor definido na tela.
     return 0;               // Devolve o valor da função (int).
 }   // Fim da Função.
