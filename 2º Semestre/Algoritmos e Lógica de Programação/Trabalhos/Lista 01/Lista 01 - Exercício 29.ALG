@@ -6,7 +6,7 @@ Algoritmo "Lista 01 - Exercício 29"
 // Autor(a)    : Higor Rocha
 // Data atual  : 07/08/2024
 Var
-num_1, num_2, soma:real
+num_1, num_2:inteiro
 
 Inicio
 // Entrada
@@ -15,11 +15,7 @@ leia(num_1)
 escreva("Digite o segundo número: ")
 leia(num_2)
 
-// Processamento
-soma <- num_1 + num_2
-soma <- soma % 3
-
 // Saída
-escreva("O resto da soma da divisão de ambos por 3 é: ", soma:1:2)
+escreva("O resto da soma da divisão de ambos por 3 é: ", (num_1 + num_2)%3:1)
 
 Fimalgoritmo

@@ -10,14 +10,13 @@ num: inteiro
 Inicio
 // Entrada e Processamento
 escreva("Número: ")
-para num de 5 ate 50 faca
-      se num % 2 = 1 entao
-         escreva(num:1)
-       se num < 49 entao
+para num de 5 ate 50 passo 2 faca
+     escreva(num:1)
+     se num < 49 entao
           escreva(", ")
         senao
              escreva(".")
-       fimse
-      fimse
+
+     fimse
 fimpara
 Fimalgoritmo

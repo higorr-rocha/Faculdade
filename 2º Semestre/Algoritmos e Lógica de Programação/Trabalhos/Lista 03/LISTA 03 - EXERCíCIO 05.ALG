@@ -9,9 +9,8 @@ num: inteiro
 
 Inicio
 // Entrada e Processamento
-num <- 30
 escreva("Número: ")
-repita
+para num de 30 ate 5 passo -1 faca
       escreva(num:1)
       se num > 5 entao
          escreva(", ")
@@ -19,6 +18,6 @@ repita
             escreva(".")
       fimse
       num <- num - 1
-ate num < 5
+fimpara
 
 Fimalgoritmo
