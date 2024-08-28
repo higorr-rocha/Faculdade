@@ -1,7 +1,7 @@
 /*
     Disciplina  : [Linguagem e TÈcnicas de Programa√ß√£o]
     Nome        : Lista - Ex 02
-    Descri√ß√£o   : Pede nome e idade de 3 pessoas. (While Do)
+    DescriÁ„o   : Pede nome e idade de 3 pessoas. (While Do)
     Autor       : Higor Rocha
     Data atual  : 20/08/2024
 */
