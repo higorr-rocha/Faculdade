@@ -1,5 +1,5 @@
 /*
-    Disciplina  : [Linguagem e Técnicas de ProgramaÃ§Ã£o]
+    Disciplina  : [Linguagem e Técnicas de Programação]
     Nome        : Lista - Ex 05
     Descrição   : Apresenta os números de 30 a 5 na tela (na mesma linha) 
     Autor       : Higor Rocha

@@ -1,5 +1,5 @@
 /*
-    Disciplina  : [Linguagem e Técnicas de ProgramaÃ§Ã£o]
+    Disciplina  : [Linguagem e Técnicas de Programação]
     Nome        : Lista - Ex 04
     Descrição   : Apresenta os números de 5 a 20 na tela (linha a linha) 
     Autor       : Higor Rocha

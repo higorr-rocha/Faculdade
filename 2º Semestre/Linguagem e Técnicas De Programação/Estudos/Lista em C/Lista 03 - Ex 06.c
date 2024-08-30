@@ -1,8 +1,8 @@
 /*
-    Disciplina  : [Linguagem e Técnicas de ProgramaÃ§Ã£o]
+    Disciplina  : [Linguagem e Técnicas de Programação]
     Nome        : Lista - Ex 06
     Descrição   : Solicita o nome, idade e sexo de uma pessoa. 
-                  Valida o sexo entre (?F? / ?M?) e idade entre 10 e 100 anos.
+                  Valida o sexo entre (F / M) e idade entre 10 e 100 anos.
     Autor       : Higor Rocha
     Data atual  : 20/08/2024
 */

@@ -1,5 +1,5 @@
 /*
-    Disciplina  : [Linguagem e Técnicas de ProgramaÃ§Ã£o]
+    Disciplina  : [Linguagem e Técnicas de Programação]
     Nome        : Lista - Ex 02
     Descrição   : Pede nome e idade de 3 pessoas. (While Do)
     Autor       : Higor Rocha
