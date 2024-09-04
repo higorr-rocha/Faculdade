@@ -21,10 +21,8 @@ Inicio
               palavra2 <- palavra2 + copia(palavra; cont; 1)
            fimse
       fimpara
-      para cont de compr(palavra) ate 1 passo -1 faca
-           se (copia(palavra; cont; 1) <> " ") entao
-              palin <- palin + copia(palavra; cont; 1)
-           fimse
+      para cont de compr(palavra2) ate 1 passo -1 faca
+           palin <- palin + copia(palavra2; cont; 1)
       fimpara
       
       // Saída
