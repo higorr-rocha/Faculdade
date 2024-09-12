@@ -17,4 +17,5 @@ int main()
     if (valor < 100) printf("O valor a ser pago é: %d", valor);
     else if (valor >= 100 && valor <= 500) printf("O valor a ser pago é: %.2f", valor - (valor * 0.10));
     else printf("O valor a ser pago é: %.2f", valor - (valor * 0.20));
+    return 0;
 }

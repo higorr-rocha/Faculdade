@@ -32,4 +32,5 @@ int main()
         break;
     }
     printf("O salarário será de: %d.", salar);
+    return 0;
 }

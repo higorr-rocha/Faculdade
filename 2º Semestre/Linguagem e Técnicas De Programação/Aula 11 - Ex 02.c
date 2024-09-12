@@ -37,6 +37,7 @@ int main()
     printf("São necessárias %d notas de 20.\n", vinteN);
     printf("São necessárias %d notas de 10.\n", dezN);
     printf("São necessárias %d notas de 5.\n", cincoN);
+    return 0;
 }
 
 int cem(int notas)

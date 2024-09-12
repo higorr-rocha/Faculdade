@@ -19,6 +19,7 @@ int main()
     scanf("%d", &num);
     if (quadrado(num)) printf("É um quadrado perfeito.");
     else printf("Não é um quadrado perfeito.");
+    return 0;
 }
 
 int quadrado(int num)
