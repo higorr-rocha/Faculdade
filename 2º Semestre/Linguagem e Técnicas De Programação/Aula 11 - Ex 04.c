@@ -1,6 +1,6 @@
 /*
     Disciplina  : [Linguagem e Técnicas de Programação]
-    Nome        : Aula 10 - Ex 04
+    Nome        : Aula 11 - Ex 04
     Autor       : Higor Rocha
     Data atual  : 10/09/2024
 */

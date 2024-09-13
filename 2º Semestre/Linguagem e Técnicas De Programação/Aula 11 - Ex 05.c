@@ -1,6 +1,6 @@
 /*
     Disciplina  : [Linguagem e Técnicas de Programação]
-    Nome        : Aula 10 - Ex 05
+    Nome        : Aula 11 - Ex 05
     Autor       : Higor Rocha
     Data atual  : 10/09/2024
 */
@@ -12,7 +12,7 @@
 
 int main()
 {
-    srand(time(NULL));
+    srand(time(0));
     int numE, num = rand() % 100;
     setlocale(LC_ALL, "Portuguese");
     printf("O computador escolheu um número entre 1 e 100. Adivinhe-o.\n");
@@ -28,7 +28,12 @@ int main()
             printf("Parabéns! Você acertou.\n");
             i = 11;
         }
-        else if (i < 9) printf("Você errou! Tente Novamente.\n");
+        else if (i < 9)
+        { 
+            printf("Você errou! Tente Novamente.\n");
+            if (numE > num) printf("Dica: O número escolhido é menor.\n");
+            else if (numE < num) printf("Dica: O número escolhido é maior.\n");
+        }
         else printf("Sinto Muito! Você perdeu.\n");
     }
     return 0;
