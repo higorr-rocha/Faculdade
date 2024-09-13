@@ -16,7 +16,7 @@ int main()
     printf("Digite o salarário: ");
     scanf("%d", &salar);
     getchar();
-    printf("DIgite a avaliação do funcionário: ");
+    printf("Digite a avaliação do funcionário: ");
     scanf("%c", &aval);
     switch (aval)
     {
