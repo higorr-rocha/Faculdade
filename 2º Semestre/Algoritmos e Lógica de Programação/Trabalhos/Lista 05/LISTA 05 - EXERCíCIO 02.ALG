@@ -15,7 +15,7 @@ inicio
       quant <- 0
       para x de 1 ate compr(frase) faca
            c <- copia(frase,x,1)
-           maiusc(c)
+           c <- maiusc(c)
            se (c = "A") ou (c = "E") ou (c = "I") ou (c = "O") ou (c = "U") entao
               quant <- quant + 1
            fimse
@@ -31,9 +31,10 @@ inicio
       quant <- 0
       para x de 1 ate compr(frase) faca
            c <- copia(frase,x,1)
-           maiusc(c)
-           asc(c)
-           se ((asc(c) > 64) e (asc(c) < 91) e (c = "A") ou (c = "E") ou (c = "I") ou (c = "O") ou (c = "U") entao
+           c <- maiusc(c)
+           se (asc(c) > 64) e (asc(c) < 91) e (c <> "A") e (c <> "E") e (c <> "I") e (c <> "O") e (c <> "U") entao
+              quant <- quant + 1
+           fimse
       fimpara
       retorne quant
 fimfuncao
@@ -41,6 +42,6 @@ fimfuncao
 Inicio
       escreva("Digite uma frase entre 10 e 50 caracteres: ")
       leia(frase)
-      escreva(vogal(frase))
-      escreva(conso(frase))
+      escreval("Vogais: ",vogal(frase):1)
+      escreval("Consoantes: ",conso(frase):1)
 Fimalgoritmo
