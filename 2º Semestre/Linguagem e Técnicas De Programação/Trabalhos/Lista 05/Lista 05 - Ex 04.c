@@ -32,5 +32,18 @@ int main(){
     if (quant > 0) printf("%d aparece %d vez(es).\n", busca, quant);
     else printf("O número %d não aparece.\n", busca);
 
+    printf("Qual número deseja procurar? ");
+    scanf("%d", &busca);
+    existe = false;
+    for (int i = 0; i < 10; i++)
+    {
+        if (!existe)
+        {
+            if (busca == vetor[i]) {existe = true; quant = i+1;}
+        }
+    }
+    if (existe) printf("O número %d foi encontrada na %dº posição.", busca, quant);
+    else printf("O número %d não foi encontrado.", busca);
+
     return 0;
 }
