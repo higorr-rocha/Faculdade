@@ -7,21 +7,25 @@
 
 #include <locale.h>
 #include <stdio.h>
+#include <string.h>
 
 int main(){
     setlocale(LC_ALL, "Portuguese");
-    int num, quant = 0;
-    float media = 0;
+    char txt[100], palavra[40];
+    int cont = 0;
     FILE *arquivo;
-    arquivo = fopen("numeros.txt", "r");
+    arquivo = fopen("meuarquivo.txt", "r");
 
-    while (fscanf(arquivo, "%d,", &num) != EOF) 
+    printf("Insira a palavra que deseja procurar: ");
+    fgets(palavra, sizeof(palavra), stdin);
+    palavra[strcspn(palavra, "\n")] = 0;
+
+    while (fscanf(arquivo, "%s", txt) != EOF)
     {
-        quant++;
-        media += num;
+        if (strcmp(palavra, txt) == 0) cont++;
     }
-
-    printf("Resultado da soma: %.2f", media/quant);
+    
+    printf("A palavra %s aparece %d vez(es).", palavra, cont);
 
     fclose(arquivo);
 
