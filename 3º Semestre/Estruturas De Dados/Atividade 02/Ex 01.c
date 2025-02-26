@@ -21,7 +21,7 @@ int main(){
     setlocale(LC_ALL, "Portuguese");
 
     char placa_b[15];
-    short int i = 0;
+    short int i = 0, encontrado = 0;
     
     for (short int i = 0; i < 5; i++)
     {
@@ -58,17 +58,14 @@ int main(){
             printf("Cor: %s\nPlaca: %s", ve[i].cor, ve[i].placa);
             printf("Combustível utilizado: %s\n", ve[i].combustivel);
             printf("Ano do Modelo: %hi\nAno de Fabricação: %hi\n", ve[i].ano_m, ve[i].ano_f);
-            i = 5;
+            encontrado = 1;
         }
+        else if(i == 4 && !encontrado)
+            printf("Veículo não localizado.");
 
         i++;
 
     } while(i < 5);
-    
-    if (i == 5)
-    {
-        printf("Veículo não localizado.");
-    }
     
     return 0;
 }
