@@ -39,6 +39,7 @@ int main(){
         ve[i].combustivel[strcspn(ve[i].combustivel, "\n")] = 0;
         printf("Informe a placa do veículo %d:", i+1);
         fgets(ve[i].placa, 15, stdin);
+        ve[i].placa[strcspn(ve[i].placa, "\n")] = 0;
         printf("Informe o ano de fabricação do veículo %d:", i+1);
         scanf("%hi", &ve[i].ano_f);
         fflush(stdin);
@@ -49,13 +50,14 @@ int main(){
     
     printf("Informe a placa a ser buscada: ");
     fgets(placa_b, 15, stdin);
+    placa_b[strcspn(placa_b, "\n")] = 0;
 
     do
     {
         if(strcmp(ve[i].placa,placa_b) == 0)
         {
             printf("Seu carro é o: %s\nMarca: %s\n", ve[i].modelo,ve[i].marca);
-            printf("Cor: %s\nPlaca: %s", ve[i].cor, ve[i].placa);
+            printf("Cor: %s\nPlaca: %s\n", ve[i].cor, ve[i].placa);
             printf("Combustível utilizado: %s\n", ve[i].combustivel);
             printf("Ano do Modelo: %hi\nAno de Fabricação: %hi\n", ve[i].ano_m, ve[i].ano_f);
             encontrado = 1;
