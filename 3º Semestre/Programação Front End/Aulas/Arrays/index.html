@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manipulação de Arrays</title>
+
+    <style>
+        body {
+            background-color: #7f7f7f;
+        }
+        h2 {
+            text-align: center;
+            color: #fff;
+        }
+    </style>
+    
+</head>
+<body>
+    <h2>Arrays</h2>
+    
+    <script>
+        let array = ["Higor", "Matheus"];
+        
+        // array.shift();               // Remove o primeiro elemento do array
+        // array.pop();                 // Remove o último elemento do array
+        // array.unshift("Lucas");      // Adiciona um novo elemento ao início do array
+        // array.push("Lucas");         // Adiciona um novo elemento ao final do array
+        // array.splice(0, 1, "Lucas"); // Começando do índice 0, remove 1 elemento e adiciona Lucas no lugar
+
+        // Maneira antiga de usar uma função
+        // Utiliza a palavra-chave 'function' para declarar a função dentro do forEach.
+        // Aqui, a função é passada como argumento para o método forEach.
+        // O método forEach executa essa função para cada elemento do array, fornecendo o elemento e o índice como parâmetros.
+        console.log("Maneira antiga:");
+        array.forEach(function(elemento, index) {
+            console.log("Elemento: " + elemento); // Exibe o valor do elemento atual
+            console.log("Índice: " + index); // Exibe o índice do elemento atual
+        });
+
+        // Maneira moderna de usar uma função
+        // Utiliza arrow functions, introduzidas no ES6, para simplificar a sintaxe.
+        // As arrow functions são mais concisas e não possuem seu próprio 'this', o que pode ser útil em alguns contextos.
+        // Assim como na maneira antiga, a função é passada como argumento para o método forEach.
+        console.log("Maneira moderna:");
+        array.forEach((elemento, index) => {
+            console.log(`Elemento: ${elemento}`); // Exibe o valor do elemento atual
+            console.log(`Índice: ${index}`); // Exibe o índice do elemento atual
+        });
+
+        // Exibe o array original no console
+        console.log(array);
+    </script>
+
+</body>
+</html>
