@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Gerenciador de Tarefas</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .concluida {
+      text-decoration: line-through;
+      color: gray;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container mt-4">
+    <h3 class="text-center">Gerenciador de Tarefas</h3>
+
+    <div class="row mt-3">
+      <div class="col-md-6">
+        <input type="text" id="Tarefa" class="form-control" placeholder="Digite a tarefa">
+      </div>
+      <div class="col-md-2">
+        <button class="btn btn-success" onclick="adicionarTarefa()">Adicionar Tarefa</button>
+      </div>
+    </div>
+
+    <div class="row mt-3">
+      <div class="col-md-6">
+        <input type="text" id="verificarTarefa" class="form-control" placeholder="Verificar/Remover tarefa">
+      </div>
+      <div class="col-md-2">
+        <button class="btn btn-primary" onclick="verificarTarefa()">Verificar</button>
+      </div>
+      <div class="col-md-2">
+        <button class="btn btn-danger" onclick="removerTarefa()">Remover</button>
+      </div>
+      <div class="col-md-2">
+        <button class="btn btn-warning" onclick="limparCampos()">Limpar Campos</button>
+      </div>
+    </div>
+
+    <div class="row mt-4">
+      <div class="col">
+        <ul id="listaTarefas" class="list-group">
+          <!-- As tarefas aparecerão aqui -->
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    let tarefas = [];
+
+    function adicionarTarefa () {
+        let tarefa = document.getElementById("Tarefa").value;
+
+        tarefas.push({nome : tarefa, concluida : false});
+
+        atualizarLista();
+        limparCampos();
+    }
+
+    function atualizarLista () {
+        let lista = document.getElementById("listaTarefas");
+        lista.innerHTML = ""
+        
+        tarefas.forEach((item) => {
+            const tag = document.createElement("li");
+            tag.textContent = item.nome;
+            tag.classList.add("list-group-item");
+
+            tag.addEventListener("click", () => {
+                item.concluida = !item.concluida;
+                atualizarLista();
+            })
+
+            if (item.concluida)
+            {
+                tag.classList.add("concluida");
+            }
+
+            if (!item.concluida)
+            {
+                tag.classList.remove("concluida");
+            }
+
+            lista.appendChild(tag);
+        });
+    }
+
+    function verificarTarefa () {
+        let tarefaVerificada = document.getElementById("verificarTarefa").value;
+        let encontrada = false;
+
+        tarefas.forEach((item) => {
+            if (item.nome === tarefaVerificada)
+            {
+                alert("Tarefa Encontrada!");
+                encontrada = true;
+            }
+        });
+
+        if (!encontrada)
+        {
+            alert("Tarefa Não Encontrada!");
+        }
+    }
+
+    function removerTarefa () {
+        let tarefaVerificada = document.getElementById("verificarTarefa").value;
+
+        tarefas.forEach((item, index) => {
+            if (item.nome === tarefaVerificada)
+            {
+                tarefas.splice(index,1);
+            }
+        });
+
+        atualizarLista();
+    }
+
+    function limparCampos () {
+        document.getElementById("Tarefa").value = "";
+        document.getElementById("verificarTarefa").value = "";
+    }
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
