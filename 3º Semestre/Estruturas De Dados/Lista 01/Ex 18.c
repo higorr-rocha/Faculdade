@@ -16,8 +16,16 @@ int main(){
     printf("Digite o valor de N1: ");
     scanf("%d", &n1);
 
-    printf("O valor de N1 é: %d\nN1 ocupa: %zu bytes.\n", n1, sizeof(n1));
+    printf("O valor de N1 é: %d\n", n1);
     printf("O endereço de memória de N1 é: %p\n", &n1);
+    printf("O valor de ptr é: %p\n", ptr_n1);
+    printf("O endereço de memória de ptr é: %p\n", &ptr_n1);
+    printf("O valor apontado por ptr é: %d\n", *ptr_n1);
+    printf("O endereço de memória do valor apontado por ptr é: %p\n", &*ptr_n1);
+    printf("N1 ocupa %zu bytes\n", sizeof(n1));
+    printf("ptr_n1 ocupa %zu bytes\n", sizeof(ptr_n1));
+    printf("O valor apontado por ptr_n1 ocupa %zu bytes\n", sizeof(*ptr_n1));
+    
 
     return 0;
 }
