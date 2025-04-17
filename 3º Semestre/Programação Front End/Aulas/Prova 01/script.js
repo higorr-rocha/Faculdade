@@ -1,0 +1,22 @@
+let produtos = [
+    { id: 1, nome: "Marshmallow", valor: 5.50 },
+    { id: 2, nome: "Bolo", valor: 15.00 },
+    { id: 3, nome: "Pão", valor: 3.00 },
+    { id: 4, nome: "Leite", valor: 4.50 },
+    { id: 5, nome: "Queijo", valor: 10.00 },
+    { id: 6, nome: "Presunto", valor: 8.00 },
+    { id: 7, nome: "Manteiga", valor: 6.50 },
+    { id: 8, nome: "Iogurte", valor: 2.50 },
+    { id: 9, nome: "Cereal", valor: 12.00 },
+    { id: 10, nome: "Arroz", valor: 20.00 },
+    { id: 11, nome: "Feijão", valor: 7.00 },
+    { id: 12, nome: "Macarrão", valor: 5.00 },
+    { id: 13, nome: "Carne", valor: 30.00 },
+    { id: 14, nome: "Frango", valor: 25.00 },
+    { id: 15, nome: "Peixe", valor: 35.00 },
+    { id: 16, nome: "Batata", valor: 4.00 },
+    { id: 17, nome: "Tomate", valor: 6.00 },
+    { id: 18, nome: "Alface", valor: 3.50 },
+    { id: 19, nome: "Cenoura", valor: 4.50 },
+    { id: 20, nome: "Maçã", valor: 2.00 }
+];

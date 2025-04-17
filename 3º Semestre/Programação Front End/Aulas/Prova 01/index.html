@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prova Prática</title>
+    <link rel="stylesheet" href="./bootstrap.min.css">
+    <style>
+        .corA {
+            background-color: #aeffff !important;
+        }
+
+        .corB {
+            background-color: rgb(255, 211, 255) !important;
+        }
+    </style>
+</head>
+
+<body>
+    <script src="./script.js"></script>
+
+    <h3 class="text-center">TechStorage</h3>
+    <div class="container">
+        <div class="row">
+            <div class="col-6">
+                <input type="text" id="name" class="form-control" placeholder="Insira o ID a ser buscado">
+            </div>
+
+            <div class="col-6">
+                <button class="btn btn-success" onclick="procurarItem()">Buscar</button>
+            </div>
+        </div>
+        <div class="row mt-3">
+            <div class="col-fluid">
+                <table class="text-center table table-bordered">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Produto</th>
+                            <th>Editar</th>
+                            <th>Remover</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tabelaBody"></tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        atualizarLista();
+
+        function atualizarLista () {
+            let cor = "corA";
+            let tabela = document.getElementById("tabelaBody");
+            tabela.innerHTML = "";
+
+            produtos.forEach((item) => {
+                tabela.innerHTML += `
+                <tr>
+                    <td class="${cor}">${item.id}</td>
+                    <td class="${cor}">${item.nome}</td>
+                    <td class="${cor}"><a href="./formProduto.html" target="_blank"><button class="btn btn-outline-secondary btn-sm">Editar</button></a></td>
+                    <td class="${cor}"><button class="btn btn-outline-danger btn-sm" onclick="removerProduto(${item.id})">Remover</button></td>
+                </tr>
+            `;
+
+                cor = (cor === "corA") ? "corB" : "corA";
+            })
+        }
+
+        function procurarItem () {
+            let id = parseInt(document.getElementById("name").value);
+            let encontrado = false;
+
+            produtos.forEach((item) => {
+                if (item.id === id)
+                {
+                    alert(`Produto encontrado!\nProduto: ${item.nome}`);
+                    encontrado = true;
+                    return;
+                }
+            });
+
+            if (!encontrado)
+            {
+                alert("Produto não encontrado!");
+            }
+        }
+
+        function removerProduto (index) {
+            produtos.forEach((item,linha) => {
+                if (item.id === index)
+                {
+                    produtos.splice(linha,1);
+                    atualizarLista();
+                    alert("Produto removido com sucesso!");
+                }
+            })
+        }
+    </script>
+</body>
+</html>
