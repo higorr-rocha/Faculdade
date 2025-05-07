@@ -5,9 +5,9 @@
     Data atual  : 07/05/2025
 */
 
+#include <locale.h>
 #include <stdio.h>
 #include <stdlib.h>
-#include <locale.h>
 
 typedef struct no{
     int dado;
@@ -24,6 +24,7 @@ int main () {
     setlocale(LC_ALL, "Portuguese");
 
     menu();
+
     return 0;
 }
 
@@ -56,42 +57,45 @@ void menu () {
             break;
         case 4:
             return;
-            break;
         }
     }
 }
 
 void push (int item) {
-    node *tmp;
-    tmp = malloc(sizeof(node));
-    if (tmp == NULL) {
+    node *aux;
+    aux = malloc(sizeof(node));
+    if (aux == NULL) {
         printf("Erro ao alocar memória\n");
         return;
     }
-    tmp -> dado = item;
-    tmp -> prox = topo;
-    topo = tmp;
+    aux -> dado = item;
+    aux -> prox = topo;
+    topo = aux;
     printf("Valor: %d, empilhado com sucesso.\n", item);
 }
 
 void pop () {
     node *aux;
     if (topo == NULL) {
-        printf("Pilha vazia\n");
+        printf("Pilha vazia!\n");
     } else {
         aux = topo;
         topo = topo -> prox;
+        printf("Valor: %d, desempilhado com sucesso.\n", aux -> dado);
         free(aux);
-        printf("Valor desempilhado com sucesso.\n");
     }
 }
 
 void imprimir() {
     node *aux;
     aux = topo;
-    while (aux != NULL) {
-        printf("%d ", aux -> dado);
-        aux = aux -> prox;
+    if (topo == NULL) {
+        printf("Pilha vazia!\n");
+    } else {
+        while (aux != NULL) {
+            printf("%d ", aux -> dado);
+            aux = aux -> prox;
+        }
+        printf ("\n");
     }
-    printf("\n");
 }
